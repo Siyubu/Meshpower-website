@@ -7,12 +7,11 @@
 <div class="container">
 <div class="row">
   <div class="col-xs-12">
-      <p class="large">Customer Hotline: <strong>+250 (0)78 157 5606</strong></p>
+    <br><p class="large">Customer Hotline: <strong>+250 (0)78 157 5606</strong></p>
   </div>
 </div>
 </div>
 </section>
-
 
 <section class="content-block">
   <div class="container">
@@ -105,12 +104,12 @@
     var mapDivUs = document.getElementById('mapus');
     var mapUs = new google.maps.Map(mapDivUs, {
       center: {lat: {{centerus[0]}}, lng: {{centerus[1]}} },
-      zoom: 13
+      zoom: 15
     });
     {% for l in locationsus %}
       var marker{{loop.index}} = new google.maps.Marker({
       position: new google.maps.LatLng({{ l.lat }}, {{ l.lon }}),
-      map: mapRw,
+      map: mapUs,
       title: '{{ l.name }}'
       });
 
