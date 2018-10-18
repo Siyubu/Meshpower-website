@@ -1,0 +1,20 @@
+{"testimonials": [
+  {
+    "title": "Customer Story",
+   "image_url": "static/images/bazubagira.jpg",
+   "text": "Bazubagira Pharazie, who runs a sewing business jointly with her husband.",
+   "quote": "The brightness of MeshPower’s light is very convenient with our line of work, because sewing requires extra brightness than usual."
+  },
+  {
+    "title": "Customer Story",
+   "image_url": "static/images/valens.jpg",
+   "text": "Mr. Valens runs a local shop.",
+   "quote": "The additional hours of light in the evening has improved my business, as I am open for longer."
+  },
+  {
+    "title": "Customer Story",
+    "image_url": "static/images/david.jpg",
+    "text": "Mr David is a  father of 4 kids, 3 of them school age. His main concern was the health of his kids due to the smoke they were exposed to by using kerosene light.",
+    "quote": "MeshPower has really improved their lives because they can study and do their homework in the evening. They are expecting better school reports!"
+  }
+]}

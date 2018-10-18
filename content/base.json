@@ -1,0 +1,11 @@
+{
+  "navigation": [
+    {"id": "index", "url": "index.html", "label": "Home"},
+    {"id": "impact", "url": "impact.html", "label": "Impact"},
+    {"id": "how-it-works", "url": "how-it-works.html", "label": "How it Works"},
+    {"id": "contact", "url": "contact.html", "label": "Contact"}
+  ],
+  "twitter_url": "https://twitter.com/meshpower",
+  "fb_url": "https://www.facebook.com/meshpowerltd/",
+  "git_url": "https://github.com/meshpower/"
+}

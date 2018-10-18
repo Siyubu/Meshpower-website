@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% import "_content.html" as content %}
+
+<div id="hero-image" class="carousel slide">
+  <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="static/images/impact-cover.jpg" alt="Generating Electricity">
+      </div>
+  </div>
+</div><!-- /.carousel -->
+
+<section class="content-block" style="padding-top: 20px;">
+  <div class="container">
+    <div class="row text-center">
+      <p class="hero">MeshPower is committed to delivering social and environmental impact to the communities it services. </p>
+    </div>
+  </div>
+</section>
+
+
+{% for c in content1 %}
+  {{ content.content_block_img_left(c.img, c.heading, c.body, points=c.points) }}
+{% endfor %}
+
+{% endblock %}

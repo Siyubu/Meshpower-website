@@ -1,0 +1,264 @@
+{% extends 'base.html' %}
+
+{% import "_carousel.html" as carousel %}
+
+{% block content %}
+  {{ carousel.carousel("hero-img", heroimg, tagline)  }}
+
+<section id="problemblock" class="content-block">
+  <div class="container text-center problem-statement">
+    <p class="hero">{{ leading }}</p>
+  </div>
+</section>
+
+<section class="content-block">
+  <div class="container">
+    <div class="row content">
+      <div class="col-md-4 col-md-offset-1" style="text-align: center;">
+        <img src="static/images/world.png" width="200">
+      </div>
+      <div class="col-md-7">
+        <h3>{{ problem }}</h3>
+        {{ problem_body }}
+      </div>
+  </div>
+</div>
+</section>
+
+<section class="content-block feature-box">
+  <div class="container">
+    <div class="row" id="usp">
+      {% for feature in usp %}
+      <div class="col-md-4 feature">
+        <div class="icon">
+          <img class="img-responsive" src="{{ feature.image }}">
+          <div class="text-content">
+          <h3>{{ feature.heading }}</h3>
+          <p>{{ feature.teaser}}</p>
+          <p class="more">{{ feature.more }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+  </div>
+</div>
+</section>
+
+<section class="content-block feature-box">
+    <div class="container text-center">
+      <h3>Our Installations</h3>
+       <div class="google-map-canvas" id="map-canvas" style="height: 500px; padding-top: 20px;"></div>
+    </div>
+  </section>
+
+{# grid drawing #}
+<section class="content-block feature-box">
+  <div id="grid-container" class="container">
+    <div class="row content text-center">
+      <h3>Learn More</h3>
+      <div class="svg-container">
+        <object id="grid" class="svg-content" width="100%" height="100%" data="static/images/grid_dark.svg" type="image/svg+xml"></object>
+      </div>
+      <p class="caption"></p>
+    </div>
+
+  </div>
+</section>
+
+{% import "_modal.html" as modal %}
+
+{% for t in testimonials %}
+    {{ modal.generic("testimonial%d" % loop.index, t) }}
+{% endfor %}
+
+<div class="modal fade testimonial-modal" tabindex="-1" role="dialog" id="btsinfo" aria-labelledby="btsinfo">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">MeshPower Basestation</h3>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12"><img class="img-responsive" src="static/images/bts.jpg" alt="A picture of a MeshPower Basestation"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12"><p>MeshPower sets up solar panels linked to a secure battery storage unit in the centre of a village called a “basestation”, typically in a customer’s house where free electricity is provided in return for keeping the equipment safe.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="/how-it-works.html" class="btn btn-default">How It Works</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+{% endblock %}
+
+{% block body_end %}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9etRzwTYnKKnDnKx1BP_F7LL9KHLaGqQ"></script>
+<script type="text/javascript" src="static/js/markerclusterer.js"></script>
+<script type="text/javascript" src="static/js/daynightoverlay.js"></script>
+<script type="text/javascript" src="static/js/markerwithlabel_packed.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+<script>
+
+function initMap() {
+
+function add_site(map, site, lat, lng) {
+  var latLong = new google.maps.LatLng(lat, lng);
+
+  var markerOpts = {
+    position: latLong,
+    map: map,
+    title: site,
+    icon: { path: google.maps.SymbolPath.CIRCLE, scale: 3, strokeColor: "#fab000", strokeWeight: 2 },
+    labelContent: site,
+    labelAnchor: new google.maps.Point(40, -5),
+    labelClass: "map-labels", // the CSS class for the label
+    labelStyle: {opacity: 0.75},
+  };
+
+  var marker = new MarkerWithLabel(markerOpts);
+
+  var circleOptions = {
+    strokeColor: '#8BC34A',
+    strokeOpacity: 0.3,
+    strokeWeight: 3,
+    fillColor: '#FFFFFF',
+    fillOpacity: 0.05,
+    map: map,
+    center: latLong,
+    radius: 200
+  };
+
+  extremeRadius = new google.maps.Circle(circleOptions);
+
+};
+
+function initialize() {
+  var mapOptions = {
+    center: new google.maps.LatLng(-34.397, 150.644),
+    zoom: 3,
+    mapTypeId: google.maps.MapTypeId.HYBRID,
+    scaleControl: true,
+  };
+
+
+  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+  var latLongBounds = new google.maps.LatLngBounds();
+
+  $.getJSON('generated/sites.json', function (data) {
+
+    // console.log(data);
+    $.each(data, function(site, coords) {
+      var latLong = new google.maps.LatLng(coords[0], coords[1]);
+      latLongBounds.extend(latLong);
+
+      add_site(map, site, coords[0], coords[1]);
+    });
+
+    map.fitBounds(latLongBounds);
+  });
+
+  new DayNightOverlay({
+    map: map,
+    fillColor: 'rgba(0,0,0,0.2)'
+  });
+  // map.setTilt(45);
+};
+
+initialize();
+};
+
+
+window.onload = function() {
+
+  initMap();
+  var obj = Snap("#grid");
+
+  var g = Snap( obj.node );    /// snapify it
+  var c1 = g.select('#c1');    /// use snaps selector to grab elements
+  var c2 = g.select('#c2');
+  var c3 = g.select('#c3');
+
+  var b1 = g.select('#bts');
+
+
+  anim1 = function(c) {
+    wrap = function() {anim2(c)};
+    c.stop().animate({stroke: "#6aff22", strokeWidth: 18}, 1000, mina.bounce, wrap);
+  };
+
+  anim2 = function(c) {
+    wrap = function() {anim1(c)};
+    c.stop().animate({stroke: "#60aa00", strokeWidth: 10.57}, 1000, mina.easeout, wrap);
+  };
+
+  btsanim1 = function(b) {
+    wrap = function() {btsanim2(b)};
+    b.stop().animate({stroke: "#ffe01b", strokeWidth: 3.2}, 1000, mina.easein, wrap);
+  }
+
+  btsanim2 = function(b) {
+    wrap = function() {btsanim1(b)};
+    b.stop().animate({stroke: "#fab000", strokeWidth: 2.47}, 1000, mina.easeout, wrap);
+  }
+
+  {% for t in testimonials %}
+    c{{loop.index}}.click(function() {
+      $('#testimonial{{loop.index}}').modal('show');
+    });
+  {% endfor %}
+
+  b1.click(function() {
+    $('#btsinfo').modal('show');
+  });
+
+
+setTimeout(function () { anim1(c1); }, 100);
+setTimeout(function () { btsanim1(b1); }, 0);
+setTimeout(function () { anim1(c2); }, 200);
+setTimeout(function () { anim1(c3); }, 0);
+};
+
+resetFeature = function(feature, i) {
+  feature.animate({'padding-left': 20, 'padding-right': 20}, 100);
+  var readMoreLink = feature.find('.read-more');
+  var textContent = feature.find('.text-content');
+  var cHeight = textContent.height();
+  var moreContent = feature.find('.more');
+
+  textContent.height(cHeight).animate({height: collapsedHeight}, 100);
+
+  moreContent.slideUp();
+  feature.find('.close-feature').slideUp();
+  readMoreLink.slideDown();
+};
+
+$('#usp .icon .close-feature').on('click', function(e) {
+  e.preventDefault();
+  resetFeature($(this).parent().parent());
+});
+
+var collapsedHeight = 0;
+$('#usp .text-content').each(function() {
+  collapsedHeight = Math.max(collapsedHeight, $(this).outerHeight());
+});
+
+$('#usp .text-content').each(function() {
+  $(this).css('height', collapsedHeight);
+});
+
+$('#usp .icon').hover(function(e) {
+  $(this).find('.more').stop().slideDown();
+  $(this).find('.text-content').stop().animate({height: '100%'}, 250);
+  $(this).parents('.feature').stop().animate({'padding-left': 5,
+    'padding-right': 5}, 200);
+
+},  function(e) { resetFeature($(this).parents('.feature')) });
+
+</script>
+
+{% endblock %}

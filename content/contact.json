@@ -1,0 +1,54 @@
+{
+  "page_title": "Contact Us",
+  "this_page": "contact",
+  "centerrw": [
+    -1.954663,
+    30.077757
+  ],
+  "locationsrw": [
+    {
+      "name": "Head Office",
+      "address": [
+        "MeshPower Limited",
+        "Nard House, KN3 Road",
+        "Kicukiru",
+        "Kigali, Rwanda"
+      ],
+      "lat": -1.9676186,
+      "lon": 30.0915103
+    },
+    {
+      "name": "Registered Office",
+      "address": [
+        "MeshPower Limited",
+        "Kigali City Tower, 14th floor",
+        "Plot No. 6418, Avenue du Commerce",
+        "P.O. Box 6528",
+        "Kigali, Rwanda"
+      ],
+      "lat": -1.9437464,
+      "lon": 30.057321
+    }
+  ],
+  "telrw": "+250 (0)78 157 5606",
+  "centerus": [
+    40.593979, 
+    -105.075687
+  ],
+  "locationsus": [
+    {
+      "name": "Xpower Head Office",
+      "address": [
+        "Xpower Inc.",
+        "430 N. College Avenue",
+        "Fort Collins",
+        "Colorado",
+        "80521",
+        "United States"
+      ],
+      "lat": 40.593979,
+      "lon": -105.075687
+    }
+  ],
+  "telus": "+1 (720) 446-9871"
+}

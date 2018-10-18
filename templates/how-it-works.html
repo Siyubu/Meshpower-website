@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div id="hero-image1" class="carousel slide">
+  <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="static/images/howitworks-cover.jpg" alt="Generating Electricity">
+      </div>
+  </div>
+</div><!-- /.carousel -->
+
+<section class="content-block">
+  <div class="container">
+
+    <div class="row">
+      <h2>Generating Electricity</h2>
+      <p>MeshPower electrifies communities that are not covered by a country’s national grid, mainly rural villages in the developing world. Villages are chosen because of their geographic location and size, with the involvement and engagement of the people who live there.</p>
+    </div>
+  </div>
+</section>
+
+{% import "_content.html" as content %}
+
+{% for c in content1 %}
+  {{ content.content_block_img_left(c.img, c.heading, c.body) }}
+{% endfor %}
+
+<div id="hero-image2" class="carousel slide">
+  <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="static/images/howitworks-optimising.jpg" alt="Optimising the system">
+      </div>
+  </div>
+</div><!-- /.carousel -->
+
+<section class="content-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Optimising the system</h2>
+        <p>Each basestation is the core of the nanogrid system which provides electricity to over 50 homes from a single source. The highly efficient power electronics provide a smart load management system which controls the generation and distribution of energy to ensure continuous and reliable service, even on rainy days.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="grid-wrap" class="content-block feature-box">
+  <div id="grid-container" class="container">
+    <div class="row text-center">
+      <div class="svg-container2">
+        <object id="grid" class="svg-content" width="80%" height="100%" data="static/images/grid.svg" type="image/svg+xml"></object>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <img class="img-responsive" src="static/images/img5.jpg">
+      </div>
+      <div class="col-md-5">
+        <p>This process is enhanced by the live monitoring of energy consumption by MeshPower’s customers via GSM connection.</p>
+        <p>This remote, live monitoring allows MeshPower staff to pre-empt or deal immediately with any hardware or outage issues, which also prevents a loss of service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="hero-image3" class="carousel slide">
+  <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="static/images/cover2.jpg" alt="Putting the customer first">
+      </div>
+  </div>
+</div><!-- /.carousel -->
+
+<section class="content-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Putting the customer first</h2>
+        <p>MeshPower has worked hand in hand with its customers since inception, adapting its model and products to its customers’ needs, giving customers of all income levels access to its services.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7" style="padding-top: 10px;">
+        <img class="img-responsive" src="static/images/img6.jpg" style="padding-bottom: 2em;">
+        <img class="img-responsive" src="static/images/img7.jpg">
+      </div>
+      <div class="col-md-5">
+
+        <h3>Energy-as-a-service</h3><p>MeshPower is one of the very few suppliers in off-grid electrification which is selling energy only, rather than hardware and asset contracts. MeshPower does not require customers to buy expensive equipment over long time frames, they simply pay for what they use.</p>
+
+        <h3>Pay-as-you-go service</h3><p>Customers buy electricity as they need it and as they can afford it, with only a minimum spend required as a deposit on each account. In addition, customers pay with cash, via voucher sales, giving more flexibility and ease of use.</p>
+
+        <h3>Tariff choice</h3><p>Customers use electricity in different ways and MeshPower provides a range of tariffs that cover both business and home use, plus different levels of intensity.</p>
+
+        <h3>Accurate billing</h3><p>Remote monitoring of customer consumption via GSM also allows for accurate, individual billing as well as giving MeshPower customer service agents the information to remind customers to top up their accounts or potentially change to a more suitable tariff.</p>
+
+        <h3>Customer Service Agents</h3><p>MeshPower employs local customer service teams. The majority work in a local headquarters handling customers on the phone, but there is also a field team making regular site visits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="hero-image4" class="carousel slide">
+  <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="static/images/rwanda-cover.jpg" alt="Rwanda">
+      </div>
+  </div>
+</div><!-- /.carousel -->
+
+<section class="content-block " id="customerstories">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Rwanda</h2>
+        <p>To date, MeshPower’s largest market is Rwanda. Only 17% of the population have access and the government’s grid extension plans will still leave 1.2 million households without connection. The majority of these people live in rural communities and are typically small-scale farmers or small business owners falling into the base-of-pyramid category.</p>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-xs-12"><h3>Customer Stories</h3><p>Click an image below to learn what our customers think about our service.</p></div>
+    </div>
+    <div class="row text-center" id="testimonial-thumbs">
+        <div class="col-xs-4">
+          <a id="cl1" href="#">
+            <img class="img-responsive" src="static/images/bazubagira_thumb.jpg" alt="...">
+          </a>
+        </div>
+        <div class="col-xs-4">
+          <a id="cl2" href="#">
+            <img id="cust1" class="img-responsive" src="static/images/valens_thumb.jpg" alt="...">
+          </a>
+        </div>
+        <div class="col-xs-4">
+          <a id="cl3" href="#">
+            <img class="img-responsive" src="static/images/david_thumb.jpg" alt="...">
+          </a>
+        </div>
+    </div>
+  </div>
+</section>
+
+{% import "_modal.html" as modal %}
+
+{% for t in testimonials %}
+    {{ modal.generic("testimonial%d" % loop.index, t) }}
+{% endfor %}
+
+{% endblock %}
+
+{% block body_end %}
+<script src="static/js/jquery.color-2.1.2.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+
+<script>
+
+$('#cl1').click(function(e) {
+  e.preventDefault();
+  $('#testimonial1').modal('show');
+});
+
+$('#cl2').click(function(e) {
+  e.preventDefault();
+  $('#testimonial2').modal('show');
+});
+
+$('#cl3').click(function(e) {
+  e.preventDefault();
+  $('#testimonial3').modal('show');
+});
+
+
+</script>
+{% endblock %}

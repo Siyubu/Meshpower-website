@@ -1,0 +1,30 @@
+{
+  "page_title": "Home",
+  "this_page": "index",
+  "heroimg": [
+    {"url": "static/images/cover1.jpg", "alt": "A MeshPower customer with her phone"},
+    {"url": "static/images/cover5.jpg", "alt": "A MeshPower customer with his hand on a consumer unit"},
+    {"url": "static/images/cover3.jpg", "alt": "A MeshPower team speaking with some customers"}
+  ],
+  "tagline": "Connecting communities with clean energy",
+  "leading": "MeshPower’s solar powered nanogrids and smart metering systems provide affordable electricity to communities without access to energy.",
+  "problem": "Worldwide 1.2 billion people live without electricity",
+  "problem_body": "<p>The UN has made access to affordable, reliable, sustainable and modern energy one of its Sustainable Development Goals because of its <a href=\"/impact.html\">impact</a> on livelihoods, development and the environment.</p><p>The solar off-grid market is expected to be worth £12 billion by 2030.<\/p>",
+  "usp": [
+      {"image": "static/images/featurebox1_rect.jpg",
+       "heading": "Affordable Access for All",
+       "teaser": "MeshPower connects whole communities, rather than individuals.",
+       "more": "Our pay-as-you-go service doesn’t require customers to buy their own equipment or commit to expensive contracts, giving all community members a chance to buy their own electricity, not just those who can afford a system installed in their own home."
+      },
+      {"image": "static/images/featurebox2_rect.jpg",
+       "heading": "Innovation and Technology",
+       "teaser": "MeshPower’s nanogrid system, designed and built by an award winning team originally from Imperial College, is the foundations of the business.",
+       "more": "Our self-designed smart load and metering systems managed via the Cloud provide the innovation that allows our nanogrids to provide affordable and reliable electricity."
+      },
+      {"image": "static/images/featurebox3_rect.jpg",
+       "heading": "Created for Customers",
+       "teaser": "MeshPower continuously uses customer feedback to develop its product and service offering.",
+       "more": "From the quality of our lights, to our flexible tariff options, to our regular customer service contact, we have developed MeshPower’s business hand in hand with our customers."
+      }
+  ]
+}

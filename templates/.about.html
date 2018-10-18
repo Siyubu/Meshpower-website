@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% import "_content.html" as content %}
+
+<div id="hero-image" class="carousel slide">
+  <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="static/images/about-cover.jpg" alt="Generating Electricity">
+      </div>
+  </div>
+</div><!-- /.carousel -->
+
+<section class="content-block">
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center">Background</h2>
+      <p></p>
+    </div>
+  </div>
+</section>
+
+<section class="content-block">
+  <div class="container">
+    <div id="team" class="row">
+      <div class="col-xs-12">
+
+      {% for t in us %}
+        <h3 class="name">{{ t.name }} </h3>
+        <p class="role">{{ t.role }}</p>
+        <p>{{ t.desc }}</p>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

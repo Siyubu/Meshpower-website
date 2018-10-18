@@ -1,0 +1,64 @@
+{
+  "page_title": "Impact",
+  "this_page": "impact",
+  "content1": [
+    {
+        "img": "static/images/impact1.jpg",
+        "heading": "Access to energy",
+        "body": "Not only do 20% of the world’s population have no electricity, a far larger share also have persistent power failures.",
+        "points": [
+          "MeshPower provides reliable and affordable electricity services to over 2,000 families.",
+          "MeshPower’s smart load system manages the energy generated to ensure continuous service, even on rainy days.",
+          "MeshPower’s pay-as-you go service allows people from all levels of society to get electricity, not just the wealthiest.",
+          "MeshPower connects communities, not just individuals, with each nanogrid installation connecting up to 50 families."
+        ]
+    },
+    {
+      "img": "static/images/impact2.jpg",
+      "heading": "Energy Generation",
+      "body": "Over the next quarter century, about 90% of the growth in energy demand will come from countries that are not members of the OECD.",
+      "points": [
+          "MeshPower continues to generate more power every year as the company grows, with each MeshPower nanogrid generating an additional 1.46MWh per annum."
+      ]
+    },
+    {
+      "img": "static/images/impact3.jpg",
+      "heading": "Reducing Emissions",
+      "body": "Reducing the world’s atmospheric pollution is essential to limiting global warming below 2% as agreed at the UN Climate Change Conference in Paris 2015.",
+      "points": [
+        "MeshPower realises a saving of 6.0 tCO2eq per nanogrid per annum."
+      ]
+    },
+    {
+      "img": "static/images/impact4.jpg",
+      "heading": "Health",
+      "body": "Burning fuel for energy creates adverse health risks, including a greater incidence of burns, indoor air pollution, accidental poisoning of children through ingesting kerosene and visual health impairment.",
+      "points": [
+        "MeshPower provides low-voltage (48V) Direct Current (DC) electricity which is safe to touch and provides no danger in terms of electric shock.",
+        "MeshPower reduces the number of batteries used, the discharge of which can be hazardous to health.",
+        "MeshPower electricity replaces 4 litres of kerosene per family per month."
+      ]
+    },
+    {
+      "img": "static/images/impact5.jpg",
+      "heading": "Poverty Alleviation",
+      "body": "MeshPower’s affordable electricity can provide household savings on a macro level, as well as stimulating further socio-economic opportunities on a larger scale, allowing new and existing businesses to expand and flourish."
+    },
+    {
+      "img": "static/images/impact6.jpg",
+      "heading": "Employment",
+      "body": "Renewable energy systems can provide more jobs than non-renewable energy systems, as well as stimulating economic and job creating activity.",
+      "points": [
+        "MeshPower has created over 20 full time jobs in Rwanda since 2014, and is providing employment for around 40 field based agents."
+      ]
+    },
+    {
+      "img": "static/images/impact7.jpg",
+      "heading": "Education",
+      "body": "Lighting extends productive hours for everyone in a family, including children, who can undertake more study at home in the evening.",
+      "points": [
+        "MeshPower customers use 4.7 hours of light after dark per household."
+      ]
+    }
+  ]
+}

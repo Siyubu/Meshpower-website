@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% import "_content.html" as content %}
+
+<div id="hero-image" class="carousel slide">
+  <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="static/images/howitworks-cover.jpg" alt="Generating Electricity">
+      </div>
+  </div>
+</div><!-- /.carousel -->
+
+<section class="content-block">
+  <div class="container">
+
+    <div class="row text-center">
+      <h1>News</h1>
+      <p class="large">A collection of news items and articles about MeshPower and the industry</p>
+    </div>
+    <div class="row">
+      <div class="col-xs-8">
+        <div class="post">
+        <h3><a href="#">An Exciting New Way to Write</a></h3>
+        <p class="meta">Posted on 12th August 2015 by Lukas Lukoschek</p>
+        <p class="blurb">We have discovered a great new way to write content about the world. The world is a horrible place but has beauty in it as well.</p>
+        <p class="readmore"><a href="#">Read More &rarr;</a></p>
+        </div>
+
+        <div class="post">
+        <h3><a href="#">An Exciting New Way to Write</a></h3>
+        <p class="meta">Posted on 12th August 2015 by Lukas Lukoschek</p>
+        <p class="blurb">We have discovered a great new way to write content about the world. The world is a horrible place but has beauty in it as well.</p>
+        <p class="readmore"><a href="#">Read More &rarr;</a></p>
+        </div>
+
+        <div class="post">
+        <h3><a href="#">An Exciting New Way to Write</a></h3>
+        <p class="meta">Posted on 12th August 2015 by Lukas Lukoschek</p>
+        <p class="blurb">We have discovered a great new way to write content about the world. The world is a horrible place but has beauty in it as well.</p>
+        <p class="readmore"><a href="#">Read More &rarr;</a></p>
+        </div>
+
+      </div>
+      <div id="sidenav" class="col-xs-4">
+        <h4>Archive</h4>
+        <ul class="archive-links">
+          <li><a href="#">December 2015</a></li>
+          <li><a href="#">December 2015</a></li>
+          <li><a href="#">December 2015</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% for c in content1 %}
+  {{ content.content_block_img_left(c.img, c.heading, c.body, points=c.points) }}
+{% endfor %}
+
+{% endblock %}

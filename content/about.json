@@ -1,0 +1,47 @@
+{
+  "page_title": "About Us",
+  "this_page": "about",
+  "uk": [
+    {
+      "name": "Lukas Lukoschek",
+      "role": "Chief Executive",
+      "desc": "Lukas was part of the team that co-founded MeshPower in mid-2012. An Electrical Engineer from Germany, Lukas was the former technical lead for e.quinox, a non-profit organisation working on renewable energy projects in East Africa. Lukas brings to MeshPower a keen business sense, experience of working in Africa and the technical know-how that is needed to make our idea a reality."
+    },
+    {
+      "name": "Charith Amarasinghe",
+      "role": "CTO",
+      "desc": "Charith leads the technology development at MeshPower company. Born and raised in Sri Lanka, Charith has been Inseparable from his soldering iron and keyboard from an early age. He is passionate about applying technology to solve the world’s problems and continues to find reasons to improve our technologies and build cool new products for our customers."
+    },
+    {
+      "name": "Richard Mori",
+      "role": "Mechanical Engineer and Operations",
+      "desc": "Having graduated with a M.Eng in Mechanical Engineering from Imperial College, Richard is responsible for the physical design and manufacture of our products, as well as procurement. During university Richard was part of e.quinox, being their head of finance in his final year. This nurtured his interest in the problem of global energy inequality and gave him extensive operational experience of working on the ground in Eastern Africa."
+    },
+    {
+      "name": "Joshua King",
+      "role": "Country Manager, Rwanda",
+      "desc": "Joshua has experience as a consultant for a microfinance institution in Ghana where he was responsible for reviewing and optimising business operations and strategy. Prior to this Joshua spent four years as a Market Risk Manager for Barclays Investment Bank in London."
+    },
+    {
+      "name": "Gerald Aigner",
+      "role": "Chairman",
+      "desc": "A co-founder of MeshPower, Gerald Aigner is currently involved in exploring renewable energy and wireless technologies. Previously, Gerald was an early employee at Google, responsible for Google's data-centre infrastructure until 2003. In 2004, Gerald founded Google's Zurich Engineering office. Gerald architects the networking and software architecture that underpins the MeshGrid system while simultaneously providing strategic support as the Chairman and Chief Investor of MeshPower."
+    },
+    {
+      "name": "Luuk van Dijk",
+      "role": "Software Specialist",
+      "desc": "Luuk van Dijk is a physicist with 25+ years of professional software engineering experience. In the last decade he worked for Google and SpaceX, and now he is in the business of advising technologically exciting companies on how to improve their technical processes and products. As a former contributor to the Go compiler, he still likes to write a few efficient lines of code. At MeshPower he is in charge of the indestructability of the firmware and the scalability of the business software."
+    },
+    {
+      "name": "Amy Rennison",
+      "desc": "Amy has had an international career in marketing and strategy, focusing most recently on the impact investment and charitable sectors. After leaving Oxford, she joined the Financial Times, followed by a stint in the City. She has board level experience as well as having a passion for travel and crime fiction."
+    }
+  ],
+  "rwanda": [
+      {
+        "name": "Francine Nduwayo",
+        "role": "Customer Service Manager",
+        "desc": "Francine was selected for the Rwandan Presidential Scholar award and holds a BSc in Biochemistry & Molecular Biology from California Baptist University in the USA. Francine also founded and manages an education NGO in her hometown of Karongi. Francine manages the Customer Service of xxxx number in the Rwanda head office in Kigali."
+      }
+    ]
+}

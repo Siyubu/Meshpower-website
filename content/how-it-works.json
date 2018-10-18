@@ -1,0 +1,21 @@
+{
+  "page_title": "How It Works",
+  "this_page": "how-it-works",
+  "content1": [
+    {
+      "img": "static/images/img2.jpg",
+      "heading": "Energy generation and storage",
+      "body": "MeshPower sets up solar panels linked to a secure battery storage unit in the centre of a village called a “basestation”, typically in a customer’s house where free electricity is provided in return for keeping the equipment safe."
+    },
+    {
+      "img": "static/images/img3.jpg",
+      "heading": "Connecting with cables",
+      "body": "Electricity travels from the basestation to each business or home via aerial cabling securely attached by MeshPower’s installation team up to a distance of 200 metres away."
+    },
+    {
+      "img": "static/images/img4.jpg",
+      "heading": "MeshPower Unit",
+      "body": "The cabling leads to an individual MeshPower Unit, a wall attachment in each business or dwelling. This acts as each customer’s electricity hub and meter, all equipment and devices are attached to it via USB portals."
+    }
+  ]
+}

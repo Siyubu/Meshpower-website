@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="content-block">
+
+
+<div class="container">
+<div class="row">
+  <div class="col-xs-12">
+      <p class="large">Customer Hotline: <strong>+250 (0)78 157 5606</strong></p>
+  </div>
+</div>
+</div>
+</section>
+
+
+<section class="content-block">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6">
+        <h2 style="text-align: center;">United States</h2>
+        <div id="mapus"></div>
+
+        {% for l in locationsus %}
+        <div class="address">
+          <h3>{{ l.name }}</h3>
+          <address>
+            {% for line in l.address -%}{{line}}<br>{%- endfor %}
+          </address>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="col-md-6">
+        <h2 style="text-align: center;">Rwanda</h2>
+        <div id="maprw"></div>
+
+        {% for l in locationsrw %}
+        <div class="address">
+          <h3>{{ l.name }}</h3>
+          <address>
+            {% for line in l.address -%}{{line}}<br>{%- endfor %}
+          </address>
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6">
+      <p><strong>Telephone:</strong> {{ telus }}</p>
+      </div>
+      <div class="col-md-6">
+      <p><strong>Telephone:</strong> {{ telrw }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-block">
+<div class="container">
+<div class="row">
+  <div class="col-xs-12">
+    <h3>Investors</h3>
+    <p>If you are interested in investing in MeshPower’s business, please call the US office and leave a message, or email <a href="mailto:investor@xpowerinc.com">investor@xpowerinc.com</a></p>
+    <!-- <h3>Media</h3>
+    <p>If you would like further information or a press pack, please email <a href="mailto:press@meshpower.co.uk">press@meshpower.co.uk</a></p> -->
+    <h3>Careers</h3>
+    <p>MeshPower is always looking for interesting individuals to join our core team and help develop the business. Please email <a href="mailto:jobs@meshpower.co.rw">jobs@meshpower.co.rw</a></p>
+  </div>
+</div>
+</div>
+</section>
+
+
+{% endblock %}
+
+{% block body_end %}
+<script>
+  function initMap() {
+
+    var mapDivRw = document.getElementById('maprw');
+    var mapRw = new google.maps.Map(mapDivRw, {
+      center: {lat: {{centerrw[0]}}, lng: {{centerrw[1]}} },
+      zoom: 13
+    });
+    {% for l in locationsrw %}
+      var marker{{loop.index}} = new google.maps.Marker({
+      position: new google.maps.LatLng({{ l.lat }}, {{ l.lon }}),
+      map: mapRw,
+      title: '{{ l.name }}'
+      });
+
+      marker{{ loop.index }}['infowindow'] = new google.maps.InfoWindow({
+        content: "<strong>{{l.name}}</strong><br>{% for a in l.address %}{{a}}<br>{% endfor %}"
+      });
+
+      google.maps.event.addListener(marker{{loop.index}}, 'click', function() {
+          this['infowindow'].open(mapRw, this);
+      });
+    {% endfor %}
+
+    var mapDivUs = document.getElementById('mapus');
+    var mapUs = new google.maps.Map(mapDivUs, {
+      center: {lat: {{centerus[0]}}, lng: {{centerus[1]}} },
+      zoom: 13
+    });
+    {% for l in locationsus %}
+      var marker{{loop.index}} = new google.maps.Marker({
+      position: new google.maps.LatLng({{ l.lat }}, {{ l.lon }}),
+      map: mapRw,
+      title: '{{ l.name }}'
+      });
+
+      marker{{ loop.index }}['infowindow'] = new google.maps.InfoWindow({
+        content: "<strong>{{l.name}}</strong><br>{% for a in l.address %}{{a}}<br>{% endfor %}"
+      });
+
+      google.maps.event.addListener(marker{{loop.index}}, 'click', function() {
+          this['infowindow'].open(mapUs, this);
+      });
+    {% endfor %}
+
+  }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9etRzwTYnKKnDnKx1BP_F7LL9KHLaGqQ&callback=initMap" async defer></script>
+{% endblock %}
