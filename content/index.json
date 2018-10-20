@@ -2,29 +2,83 @@
   "page_title": "Home",
   "this_page": "index",
   "heroimg": [
-    {"url": "static/images/cover1.jpg", "alt": "A MeshPower customer with her phone"},
-    {"url": "static/images/cover5.jpg", "alt": "A MeshPower customer with his hand on a consumer unit"},
-    {"url": "static/images/cover3.jpg", "alt": "A MeshPower team speaking with some customers"}
+    {
+      "url": "static/images/cover1.jpg",
+      "alt": "A MeshPower customer with her phone"
+    },
+    {
+      "url": "static/images/cover5.jpg",
+      "alt": "A MeshPower customer with his hand on a consumer unit"
+    },
+    {
+      "url": "static/images/cover3.jpg",
+      "alt": "A MeshPower team speaking with some customers"
+    }
   ],
   "tagline": "Connecting communities with clean energy",
   "leading": "MeshPower’s solar powered nanogrids and smart metering systems provide affordable electricity to communities without access to energy.",
   "problem": "Worldwide 1.2 billion people live without electricity",
   "problem_body": "<p>The UN has made access to affordable, reliable, sustainable and modern energy one of its Sustainable Development Goals because of its <a href=\"/impact.html\">impact</a> on livelihoods, development and the environment.</p><p>The solar off-grid market is expected to be worth £12 billion by 2030.<\/p>",
   "usp": [
-      {"image": "static/images/featurebox1_rect.jpg",
-       "heading": "Affordable Access for All",
-       "teaser": "MeshPower connects whole communities, rather than individuals.",
-       "more": "Our pay-as-you-go service doesn’t require customers to buy their own equipment or commit to expensive contracts, giving all community members a chance to buy their own electricity, not just those who can afford a system installed in their own home."
+    {
+      "image": "static/images/featurebox1_rect.jpg",
+      "heading": "Affordable Access for All",
+      "teaser": "MeshPower connects whole communities, rather than individuals.",
+      "more": "Our pay-as-you-go service doesn’t require customers to buy their own equipment or commit to expensive contracts, giving all community members a chance to buy their own electricity, not just those who can afford a system installed in their own home."
+    },
+    {
+      "image": "static/images/featurebox2_rect.jpg",
+      "heading": "Innovation and Technology",
+      "teaser": "MeshPower’s nanogrid system, designed and built by an award winning team originally from Imperial College, is the foundations of the business.",
+      "more": "Our self-designed smart load and metering systems managed via the Cloud provide the innovation that allows our nanogrids to provide affordable and reliable electricity."
+    },
+    {
+      "image": "static/images/featurebox3_rect.jpg",
+      "heading": "Created for Customers",
+      "teaser": "MeshPower continuously uses customer feedback to develop its product and service offering.",
+      "more": "From the quality of our lights, to our flexible tariff options, to our regular customer service contact, we have developed MeshPower’s business hand in hand with our customers."
+    }
+  ],
+  "partners": [
+    [
+      {
+        "image": "static/images/partners/csu_ei_logo_flat.png",
+        "title": "Technology and research partner",
+        "link": "https://energy.colostate.edu/entrepreneurship/spin-out-companies/",
+        "alt": "CSU Energy Institute"
       },
-      {"image": "static/images/featurebox2_rect.jpg",
-       "heading": "Innovation and Technology",
-       "teaser": "MeshPower’s nanogrid system, designed and built by an award winning team originally from Imperial College, is the foundations of the business.",
-       "more": "Our self-designed smart load and metering systems managed via the Cloud provide the innovation that allows our nanogrids to provide affordable and reliable electricity."
+      {
+        "image": "static/images/partners/microsoft_logo_transparent.png",
+        "title": "Microsoft Airband Grant 2018 recipient",
+        "link": "https://www.microsoft.com/en-us/airband/grants",
+        "alt": "Microsoft"
       },
-      {"image": "static/images/featurebox3_rect.jpg",
-       "heading": "Created for Customers",
-       "teaser": "MeshPower continuously uses customer feedback to develop its product and service offering.",
-       "more": "From the quality of our lights, to our flexible tariff options, to our regular customer service contact, we have developed MeshPower’s business hand in hand with our customers."
+      {
+        "image": "static/images/partners/eep-logo_en.png",
+        "title": "Co-financed minigrid project in Rwanda in 2016 with MeshPower",
+        "link": "https://eepafrica.org/portfolio-item/rwa9010/",
+        "alt": "Energy and Environment Partnership"
       }
+    ],
+    [
+      {
+        "image": "static/images/partners/endev_logo_long.png",
+        "title": "MeshPower received Results Based Financing for minigrids in 2016 and 2018",
+        "link": "https://endev.info/content/Rwanda",
+        "alt": "Energising Development"
+      },
+      {
+        "image": "static/images/partners/giz_logo.jpg",
+        "title": "Part of the Make-IT in Africa initiative",
+        "link": "https://make-it-initiative.org/africa/cpt_startup/meshpower-rwanda/",
+        "alt": "GIZ"
+      },
+      {
+        "image": "static/images/partners/energy4impact.png",
+        "title": "Recipient of SOGER grant to stimulate economic development on our grids",
+        "link": "https://www.energy4impact.org/news/meshpower-mini-grid-opens-commercial-opportunities-rural-rwanda",
+        "alt": "Energy 4 Impact"
+      }
+    ]
   ]
 }

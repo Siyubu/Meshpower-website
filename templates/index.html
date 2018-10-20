@@ -65,6 +65,25 @@
   </div>
 </section>
 
+<section class="content-block">
+  <div class="container text-center">
+    <div class="row content text-center">
+          <h2 class="section-heading">Our partners:</h2><br>
+    </div>
+
+      {% for row in partners %}
+      <div class="row">
+      {% for partner in row %}
+      <div class="col-m-6 col-lg-4">
+        <a href="{{ partner.link }}" target="_" title="{{ partner.title }}">
+        <img class="img-responsive" src="{{ partner.image }}" alt="{{ partner.alt }}"> </a>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
 {% import "_modal.html" as modal %}
 
 {% for t in testimonials %}
