@@ -44,12 +44,20 @@
 </div>
 </section>
 
+<hr>
+<section id="blog" class="content-block feature-box">
+    <div class="container text-center">
+      <h3>Our Blog</h3>
+      <div id="medium-widget"></div>
+    </div>
+</section>
+<hr>
 <section class="content-block feature-box">
     <div class="container text-center">
       <h3>Our Installations</h3>
        <div class="google-map-canvas" id="map-canvas" style="height: 500px; padding-top: 20px;"></div>
     </div>
-  </section>
+</section>
 
 {# grid drawing #}
 <section class="content-block feature-box">
@@ -131,6 +139,10 @@
 <script type="text/javascript" src="static/js/daynightoverlay.js"></script>
 <script type="text/javascript" src="static/js/markerwithlabel_packed.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+
+<script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"http://medium.com/@xpower","postsPerLine":2,"limit":4,"picture":"big","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>
+
 <script>
 
 function initMap() {
@@ -203,6 +215,7 @@ initialize();
 
 
 window.onload = function() {
+
 
   initMap();
   var obj = Snap("#grid");
