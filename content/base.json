@@ -3,7 +3,7 @@
       {"id": "index", "url": "index.html", "label": "Home"},
       {"id": "impact", "url": "impact.html", "label": "Impact"},
       {"id": "how-it-works", "url": "how-it-works.html", "label": "How it Works"},
-      {"id": "blog", "url": "index.html#blog", "label": "Blog"},
+      {"id": "news", "url": "index.html#news", "label": "News"},
       {"id": "contact", "url": "contact.html", "label": "Contact"}
   ],
   "twitter_url": "https://twitter.com/meshpower",
