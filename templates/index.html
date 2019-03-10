@@ -2,6 +2,9 @@
 
 {% import "_carousel.html" as carousel %}
 
+{% block head %}
+{% endblock %}
+
 {% block content %}
   {{ carousel.carousel("hero-img", heroimg, tagline)  }}
 
@@ -139,11 +142,13 @@
 <script type="text/javascript" src="static/js/daynightoverlay.js"></script>
 <script type="text/javascript" src="static/js/markerwithlabel_packed.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+<script type="text/javascript" src="http://downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
 
 <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
     <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"http://medium.com/@xpower","postsPerLine":2,"limit":4,"picture":"big","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>
 
 <script>
+window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"http://mc.us20.list-manage.com","uuid":"8643317d4236534fd668e1240","lid":"5d1202825d","uniqueMethods":true}) })
 
 function initMap() {
 
@@ -300,6 +305,7 @@ $('#usp .icon').hover(function(e) {
     'padding-right': 5}, 200);
 
 },  function(e) { resetFeature($(this).parents('.feature')) });
+
 
 </script>
 
