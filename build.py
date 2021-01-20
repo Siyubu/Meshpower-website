@@ -28,4 +28,4 @@ if __name__ == "__main__":
         # ('about.html', load_json('content/about.json'))
     ], mergecontexts=True, outpath='site')
 
-    site.render(use_reloader=True)
+    site.render(use_reloader=False)
