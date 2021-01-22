@@ -13,7 +13,7 @@ collections:
         name: "team"
         file: "content/team.json"
         fields:
-          - label: person
+          - label: page_title
             name: team
             widget: object
             fields:
