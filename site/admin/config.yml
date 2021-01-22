@@ -8,6 +8,7 @@ public_folder: "/images" # The src attribute for uploaded media will begin with 
 collections:
   - label: "Team"
     name: "team"
+    widget: object
     files:
       - label: "Team Members"
         name: "team"
@@ -15,7 +16,7 @@ collections:
         fields:
           - label: page_title
             name: team
-            widget: object
+            widget: list
             fields:
               - {label: Photo, name: photo, widget: image}
               - {label: Name, name: name, widget: string}
