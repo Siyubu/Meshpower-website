@@ -13,11 +13,11 @@ collections:
       - label: "Team Members"
         name: "team"
         file: "content/team.json"
-        widget: object
+        widget: list
         fields:
           - label: page_title
             name: team
-            widget: "object"
+            widget: object
             field:
               - {label: Photo, name: photo, widget: image}
               - {label: Name, name: name, widget: string}
