@@ -5,7 +5,8 @@
       {"id": "how-it-works", "url": "how-it-works.html", "label": "How it Works"},
       {"id": "mission", "url": "mission.html", "label": "Our Mission"},      
       {"id": "news", "url": "index.html#news", "label": "News"},
-      {"id": "contact", "url": "contact.html", "label": "Contact"}
+      {"id": "contact", "url": "contact.html", "label": "Contact"},
+      {"id": "team", "url": "team.html", "label": "Team Members"}
   ],
     "twitter_url": "https://twitter.com/meshpower",
     "fb_url": "https://www.facebook.com/meshpowerltd/",

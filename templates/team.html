@@ -1,0 +1,64 @@
+{% extends "_base.html" %}
+{% block content %}
+
+{% import "_content.html" as content %}
+
+<section class="content-block feature-box">
+    <div class="container">
+      <div class="row" id="team">
+        {% for person in team %}
+        <div class="col-md-4 feature" >
+          <div class="icon" >
+            <img class="img-responsive" src="{{ person.Photo }}" >
+            <div class="text-content">
+            <h3>{{ person.Name }}</h3>
+            <p>{{ person.Position}}</p>
+            <p class="more">{{ person.Bio }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+  </section>
+  {% endblock %}
+  {% block body_end %}
+  <script>
+    resetFeature = function(feature, i) {
+        feature.animate({'padding-left': 20, 'padding-right': 20}, 100);
+        var readMoreLink = feature.find('.read-more');
+        var textContent = feature.find('.text-content');
+        var cHeight = textContent.height();
+        var moreContent = feature.find('.more');
+      
+        textContent.height(cHeight).animate({height: collapsedHeight}, 100);
+      
+        moreContent.slideUp();
+        feature.find('.close-feature').slideUp();
+        readMoreLink.slideDown();
+      };
+    
+    $('#team .icon .close-feature').on('click', function(e) {
+      e.preventDefault();
+      resetFeature($(this).parent().parent());
+    });
+    
+    var collapsedHeight = 0;
+    $('#team .text-content').each(function() {
+      collapsedHeight = Math.max(collapsedHeight, $(this).outerHeight());
+    });
+    
+    $('#team .text-content').each(function() {
+      $(this).css('height', collapsedHeight);
+    });
+    
+    $('#team .icon').hover(function(e) {
+      $(this).find('.more').stop().slideDown();
+      $(this).find('.text-content').stop().animate({height: '100%'}, 250);
+      $(this).parents('.feature').stop().animate({'padding-left': 5,
+        'padding-right': 5}, 200);
+    
+    },  function(e) { resetFeature($(this).parents('.feature')) });
+    </script>
+
+{% endblock %}

@@ -24,7 +24,8 @@ if __name__ == "__main__":
         ('how-it-works.html', load_json('content/how-it-works.json')),
         ('impact.html', load_json('content/impact.json')),
         ('contact.html', load_json('content/contact.json')),
-        ('mission.html', load_json('content/mission.json')),        
+        ('mission.html', load_json('content/mission.json')),
+        ('team.html', load_json('content/team.json')),        
         # ('about.html', load_json('content/about.json'))
     ], mergecontexts=True, outpath='site')
 
