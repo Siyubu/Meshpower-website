@@ -1,12 +1,16 @@
 {
-    "page_title": "Team Members",
-    "this_page": "Team",
-    "team": [
-        {
-          "Photo": "static/images/team/one.JPG",
-          "Name": "Iribagiza Mukobwamwiza",
-          "Position": "Director of Marketing",
-          "Bio": "W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy"
-        }
-      ]
+  "page_title": "Team Members",
+  "this_page": "Team",
+  "team": [
+    {
+      "Photo": "static/images/team/one.JPG",
+      "Name": "Iribagiza Mukobwamwiza",
+      "Position": "Director of Marketing",
+      "Bio": "W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy",
+      "photo": "/images/covers.jpg",
+      "name": "Chantal Nyina Wumuntu",
+      "position": "Finance Officer",
+      "bio": "<!--StartFragment-->\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor rhoncus vestibulum. Vestibulum efficitur suscipit nisl nec finibus. Nulla facilisi. Donec accumsan nulla ante, at consectetur ipsum suscipit nec. Suspendisse ac auctor libero, egestas lacinia quam. Duis eget dapibus diam. Aliquam erat volutpat. Quisque vel sagittis ex\n\n<!--EndFragment-->"
+    }
+  ]
 }
