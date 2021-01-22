@@ -17,7 +17,7 @@ collections:
         fields:
           - label: page_title
             name: team
-            widget: object
+            widget: list
             fields:
               - {label: Photo, name: photo, widget: image}
               - {label: Name, name: name, widget: string}
