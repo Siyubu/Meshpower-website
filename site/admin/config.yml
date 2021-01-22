@@ -13,9 +13,9 @@ collections:
         name: "team"
         file: "content/team.json"
         fields:
-          - label: page_title
+          - label: person
             name: team
-            widget: list
+            widget: object
             fields:
               - {label: Photo, name: photo, widget: image}
               - {label: Name, name: name, widget: string}
