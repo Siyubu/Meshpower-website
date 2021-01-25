@@ -26,7 +26,6 @@ collections:
       - label: "Impact Page"
         name: "impact"
         file: "content/impact.json"
-        widget: list
         fields:
               - {label: img, name: img, widget: image}
               - {label: heading, name: heading, widget: string}
