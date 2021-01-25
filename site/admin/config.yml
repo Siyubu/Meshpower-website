@@ -29,7 +29,7 @@ collections:
         widget: list
         fields:
           - label: impact
-            name: content1
+            name: content
             widget: object
             fields:
               - {label: img, name: image, widget: image}
