@@ -3,22 +3,22 @@
   "this_page": "impact",
   "content1": [
     {
-        "img": "static/images/impact1.jpg",
-        "heading": "Access to energy",
-        "body": "Not only do 20% of the world’s population have no electricity, a far larger share also have persistent power failures.",
-        "points": [
-          "MeshPower provides reliable and affordable electricity services to over 2,000 families.",
-          "MeshPower’s smart load system manages the energy generated to ensure continuous service, even on rainy days.",
-          "MeshPower’s pay-as-you go service allows people from all levels of society to get electricity, not just the wealthiest.",
-          "MeshPower connects communities, not just individuals, with each nanogrid installation connecting up to 50 families."
-        ]
+      "img": "static/images/impact1.jpg",
+      "heading": "Access to energy",
+      "body": "Not only do 20% of the world’s population have no electricity, a far larger share also have persistent power failures.",
+      "points": [
+        "MeshPower provides reliable and affordable electricity services to over 2,000 families.",
+        "MeshPower’s smart load system manages the energy generated to ensure continuous service, even on rainy days.",
+        "MeshPower’s pay-as-you go service allows people from all levels of society to get electricity, not just the wealthiest.",
+        "MeshPower connects communities, not just individuals, with each nanogrid installation connecting up to 50 families."
+      ]
     },
     {
       "img": "static/images/impact2.jpg",
       "heading": "Energy Generation",
       "body": "Over the next quarter century, about 90% of the growth in energy demand will come from countries that are not members of the OECD.",
       "points": [
-          "MeshPower continues to generate more power every year as the company grows, with each MeshPower nanogrid generating an additional 1.46MWh per annum."
+        "MeshPower continues to generate more power every year as the company grows, with each MeshPower nanogrid generating an additional 1.46MWh per annum."
       ]
     },
     {
@@ -60,5 +60,21 @@
         "MeshPower customers use 4.7 hours of light after dark per household."
       ]
     }
-  ]
+  ],
+  "content": {
+    "image": "static/images/team/one.JPG",
+    "heading": "To be Deleted",
+    "body": "\n\n**Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "points": [
+      {
+        "point": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaaaa"
+      },
+      {
+        "point": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+      },
+      {
+        "point": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCc"
+      }
+    ]
+  }
 }
