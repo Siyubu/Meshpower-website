@@ -30,7 +30,7 @@ collections:
         fields:
           - label: impact
             name: content1
-            widget: list
+            widget: oblect
             fields:
               - {label: img, name: image, widget: image}
               - {label: heading, name: heading, widget: string}
