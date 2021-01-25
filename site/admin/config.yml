@@ -28,10 +28,6 @@ collections:
         file: "content/impact.json"
         widget: list
         fields:
-          - label: impact
-            name: content1
-            widget: list
-            fields:
               - {label: img, name: image, widget: image}
               - {label: heading, name: heading, widget: string}
               - {label: body, name: body, widget: markdown}
@@ -40,6 +36,7 @@ collections:
                 widget: list
                 fields:
                   - {label: Point,name: point,widget: string}
+            
   
 
             
