@@ -26,16 +26,12 @@ collections:
       - label: "Impact Page"
         name: "impact"
         file: "content/impact.json"
-        widget: list
+        widget: object
         fields:
-              - {label: img, name: image, widget: image}
+              - {label: img, name: img, widget: image}
               - {label: heading, name: heading, widget: string}
               - {label: body, name: body, widget: markdown}
-              - label: points
-                name: points
-                widget: list
-                fields:
-                  - {label: Point,name: point,widget: string}
+              - {label: points, name: points, widget: list}
             
   
 

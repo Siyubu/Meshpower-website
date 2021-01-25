@@ -60,19 +60,6 @@
         "MeshPower customers use 4.7 hours of light after dark per household."
       ]
     }
-  ],
-  "image": "static/images/team/covers.jpg",
-  "heading": "To be deleted",
-  "body": "**Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-  "points": [
-    {
-      "point": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa"
-    },
-    {
-      "point": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
-    },
-    {
-      "point": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
-    }
   ]
+
 }
