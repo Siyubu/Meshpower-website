@@ -6,11 +6,11 @@ media_folder: "site/static/images/team" # Media files will be stored in the repo
 public_folder: "static/images/team" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  - label: "Team"
-    name: "team"
+  - label: "Pages"
+    name: "pages"
     
     files:
-      - label: "Team Members"
+      - label: "Team Members page"
         name: "team"
         file: "content/team.json"
         widget: list
@@ -23,5 +23,26 @@ collections:
               - {label: Name, name: name, widget: string}
               - {label: Position, name: position, widget: string}
               - {label: Bio, name: bio, widget: markdown}
+      - label: "Impact Page"
+        name: "impact"
+        file: "content/impact.json"
+        widget: list
+        fields:
+          - label: impact
+            name: content1
+            widget: list
+          - {label: img, name: img, widget: image}
+          - {label: heading, name: heading, widget: string}
+          - {label: body, name: body, widget: markdown}
+          - label: points
+            name: points
+            widget: list
+            fields:
+              - label: Point
+                name: point
+                widget: string
+  
+
+            
               
  
