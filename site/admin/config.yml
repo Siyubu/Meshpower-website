@@ -15,7 +15,7 @@ collections:
         file: "content/team.json"
         widget: list
         fields:
-          - label: page_title
+          - label: persons
             name: team
             widget: list
             fields:
