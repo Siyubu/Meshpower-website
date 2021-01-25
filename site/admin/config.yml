@@ -29,8 +29,8 @@ collections:
         widget: list
         fields:
           - label: impact
-            name: content
-            widget: object
+            name: content1
+            widget: list
             fields:
               - {label: img, name: image, widget: image}
               - {label: heading, name: heading, widget: string}
@@ -39,9 +39,7 @@ collections:
                 name: points
                 widget: list
                 fields:
-                  - label: Point
-                    name: point
-                    widget: string
+                  - {label: Point,name: point,widget: string}
   
 
             
