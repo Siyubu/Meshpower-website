@@ -13,6 +13,12 @@
       "name": "Chibaluma",
       "position": "Model",
       "bio": "**Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make"
+    },
+    {
+      "photo": "static/images/what-is-happiness.jpg",
+      "name": "happy Furaha",
+      "position": "Happy happy ",
+      "bio": "Sometimes we make small mistakes (or big ones!). Thankfully, Git comes equipped with commands that allow us to fix our mistakes. But beware, some commands that help us fix mistakes destructively modify the commit ID. Since these commit IDs are immutable, you could potentially cause issues for other collaborators. As a general rule, you should only use git revert if the commit has been pushed to the remote."
     }
   ]
 }
