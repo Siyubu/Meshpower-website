@@ -61,14 +61,13 @@
       ]
     },
     {
-      "img": "static/images/one.JPG",
-      "heading": "To be deleted",
+      "img": "static/images/what-is-happiness.jpg",
+      "heading": "To Be Deleted",
       "body": "jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.\r\njQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation",
       "points": [
-        "CCCCCCCCCCCCCCCCCCC",
-        "BBBBBBBBBBBBB",
-        "KKKKKKKKKKKKKKKK",
-        "LLLLLLLLLLLLLLL"
+        "KKKKKKKKKKKKKKKKKKKKKKKk",
+        "LLLLLLLLLLLLLLLLLLLLL",
+        "MMMMMMMMMMM"
       ]
     }
   ]
